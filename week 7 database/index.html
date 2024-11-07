@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student expense dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>student expense dashboard</h1>
+    </header>
+    <section class="summary">
+        <div class="card" id="total-expenses">Total Expenses: ksh0</div>
+        <div class="card" id="monthly-average">Monthly Average: ksh0</div>
+        <div class="card" id="top-category">Top Category: N/A</div>
+    </section>
+    <section class="charts">
+        <div class="chart-container">
+            <canvas id="categoryChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="trendChart"></canvas>
+        </div>
+    </section>
+    <section class="filters">
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="Food">Food</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Transport">Sherehe</option>
+        </select>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

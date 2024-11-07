@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/939331/pexels-photo-939331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    transition: background-image 0.5s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.summary {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center; 
+    width: 100%;
+}
+
+.card {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    flex: 1 1 150px;
+    max-width: 200px;
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center; 
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    aspect-ratio: 1;
+}
+
+.filters {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 0.9em;
+        max-width: 150px; 
+    }
+
+    .chart-container {
+        max-width: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .filters {
+        margin-top: 10px;
+    }
+}
